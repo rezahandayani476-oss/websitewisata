@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Traveler - Home</title>
+    <style type="text/css">
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        /* Background Gunung Diterapkan ke Semua Halaman */
+        body {
+            background: url('aset64.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 15px;
+            color: #333333;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 38% 60%;
+            grid-template-rows: auto 1fr auto;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        /* Header & Footer Transparan */
+        div.header { grid-column: 1 / 3; background: rgba(44, 62, 80, 0.9); color: #ffffff; padding: 20px 10px; font-size: 2.2em; font-weight: 700; text-align: center; border-radius: 8px; letter-spacing: 2px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; }
+        div.footer { grid-column: 1 / 3; background: rgba(26, 37, 47, 0.9); color: #bdc3c7; padding: 15px 10px; font-size: 0.95em; text-align: center; border-radius: 8px; letter-spacing: 1px; display: flex; align-items: center; justify-content: center; box-shadow: 0 -4px 6px rgba(0,0,0,0.2); }
+
+        /* Sidebar Tetap Menggunakan Background Danau/Hutan */
+        div.sidebar { background: url('aset65.jpg') no-repeat center center; background-size: cover; border: 1px solid #e0e0e0; border-radius: 8px; box-shadow: 0 8px 15px rgba(0,0,0,0.3); padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+        /* Kotak Konten Transparan dengan Efek Blur */
+        div.content {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            padding: 30px;
+            overflow-y: auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        div.nav-menu { display: flex; flex-direction: column; gap: 15px; width: 75%; }
+        .nav-link { text-decoration: none; color: inherit; width: 100%; }
+        div.nav-item { padding: 15px 20px; background: rgba(248, 249, 250, 0.9); border: 1px solid #e9ecef; border-radius: 6px; font-size: 1.1em; font-weight: 600; text-align: center; color: #34495e; transition: all 0.3s ease; width: 100%; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        div.nav-item:hover { background: #3498db; color: #ffffff; border-color: #3498db; transform: scale(1.05); }
+        div.nav-item.active { background: #3498db; color: #ffffff; border-color: #3498db; }
+
+        div.content-title { font-size: 1.6em; font-weight: 700; color: #2c3e50; margin-bottom: 20px; border-bottom: 2px solid rgba(44, 62, 80, 0.5); padding-bottom: 10px; }
+
+        .content-image { width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <div class="header">WELCOME TRAVELER</div>
+
+    <div class="sidebar">
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link"><div class="nav-item active">Home</div></a>
+            <a href="profil.html" class="nav-link"><div class="nav-item">Profil</div></a>
+            <a href="kontak.html" class="nav-link"><div class="nav-item">Kontak</div></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-title">Selamat Datang di Beranda</div>
+        <div>
+            <img src="aset62.jpg" alt="Situ Gunung" class="content-image">
+        </div>
+        <div class="content-text" style="text-align: justify;">
+            Situ Gunung adalah kawasan wisata alam di kaki Gunung Gede Pangrango, Sukabumi, yang terkenal dengan jembatan gantung terpanjang di tengah hutan se-Asia Tenggara.
+        </div>
+    </div>
+
+    <div class="footer">copyright Mochamad Reza Handayani</div>
+
+</body>
+</html>
